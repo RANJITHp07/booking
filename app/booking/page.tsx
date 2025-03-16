@@ -89,13 +89,16 @@ function Booking() {
         }
 
         let b = false
-        // Store the new booking
         slot.forEach((item: any) => {
             const book = isAlreadyBooked(formattedDate, item)
             if (!book) {
                 b = true
-                return toast.error("You already have class at that slot"); // Stops execution
+                toast.error("You already have class at that slot"); // Stops execution
             }
+        })
+        if (b) return;
+        // Store the new booking
+        slot.forEach((item: any) => {
             const newBooking = {
                 date: formattedDate,
                 class: cls,

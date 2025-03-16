@@ -7,16 +7,15 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // const [userInfo, setUserInfo] = useState<any>(null)
-  // const router = useRouter()
+  const router = useRouter()
 
-  // useEffect(() => {
-  //   const user = localStorage.getItem("userInfo");
+  useEffect(() => {
+    const user = localStorage.getItem("userInfo");
 
-  //   if (!user) {
-  //     router.push("/login");
-  //   }
-  // }, []);
+    if (!user) {
+      router.push("/login");
+    }
+  }, []);
 
   return (
     <div>
