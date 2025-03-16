@@ -1,28 +1,26 @@
-// 'use client'
-// import { DataTableDemo } from "@/components/data-table";
-// import Navbar from "@/components/navBar";
-// import Profile from "@/components/profile";
-// import Image from "next/image";
-// import { useRouter } from "next/navigation";
-// import { useEffect, useState } from "react";
+'use client'
+import { DataTableDemo } from "@/components/data-table";
+import Navbar from "@/components/navBar";
+import Profile from "@/components/profile";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
-// export default function Home() {
-//   const [userInfo, setUserInfo] = useState<any>(null)
-//   const router = useRouter()
+export default function Home() {
+  // const [userInfo, setUserInfo] = useState<any>(null)
+  // const router = useRouter()
 
-//   useEffect(() => {
-//     const user = localStorage.getItem("userInfo");
+  // useEffect(() => {
+  //   const user = localStorage.getItem("userInfo");
 
-//     if (!user) {
-//       router.push("/login");
-//     }
-//   }, []);
+  //   if (!user) {
+  //     router.push("/login");
+  //   }
+  // }, []);
 
-//   return (
-//     <div>
-//       <Navbar />
-//       <Profile />
-//       <DataTableDemo />
-//     </div>
-//   );
-// }
+  return (
+    <div>
+
+    </div>
+  );
+}
